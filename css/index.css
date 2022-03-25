@@ -1,0 +1,436 @@
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+@font-face {
+    font-family: "GothamBook";
+    src: url("../font/GothamBook.ttf");
+}
+
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url("../font/GothamBold.ttf");
+}
+
+.main {
+    color: #fff;
+    display: flex;
+    font-family: "GothamBook";
+}
+
+.side-navbar {
+    background-color: #040404;
+    width: 230px;
+    height: 880px;
+    position: fixed;
+}
+
+.main-content {
+    margin-left: 230px;
+    background-color: #121212;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 88%;
+}
+
+.main-content .top-navbar .top-navbar-container {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px 0 50px;
+}
+
+.top-navbar .top-navbar-container .navigation-arrows {
+    display: flex;
+}
+
+.top-navbar-container .navigation-arrows svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 20px;
+    color: #888888;
+}
+
+.top-navbar-container .navigation-arrows svg:hover {
+        color: #fff;
+        cursor: pointer;
+}
+
+.top-navbar-container .user {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 16px;
+}
+
+.top-navbar-container .user:hover {
+    padding: 5px;
+    background-color: #282828;
+    cursor: pointer;
+}
+
+.top-navbar-container .user svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+}
+
+.username {
+    font-size: 13px;
+}
+
+.main-content .container {
+    padding: 0 32px 0 32px;
+    height: 1100px;
+}
+
+.container .category {
+    padding: 16px 0 16px 0;
+}
+
+.container .category .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 28px;
+}
+
+.category .header .title {
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.category .header .title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.category .header .see-all {
+    text-transform: uppercase;
+    font-family: "Gotham-Bold";
+    font-size: 13px;
+    color: #aaaaaa;
+    margin-right: 20px;
+}
+
+.category .header .see-all:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.albuns .albuns-list {
+    display: flex;
+}
+
+.albuns .albuns-list .list-item {
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    height: 238px;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.albuns .albuns-list .list-item:hover {
+    cursor: pointer;
+}
+
+.category .albuns .album-image {
+    width: 125px;
+    height: 125px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.category .albuns .albun-infos {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: -10px;
+}
+.category .albuns .album-title {
+    font-size: 13px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-family: "Gotham-Bold"; 
+}
+
+.category .albuns .album-creator {
+    font-size: 11px;
+    color: #aaaaaa;
+}
+
+.bottom-navbar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #282828;
+}
+
+.side-navbar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #aaaaaa;
+}
+
+.side-navbar .side-navbar-container {
+    padding-left: 24px;
+}
+
+.side-navbar .navbar-logo .spotify-logo {
+    width: 130px;
+    height: 39px;
+    padding: 0 0 22px 24px;
+    color: #fff;
+}
+
+.side-navbar .navbar-links .navbar-links-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.side-navbar .navbar-links .navbar-link-item {
+    display: flex;
+    align-items: center;
+    width: 93%;
+    height: 40px;
+    border-radius: 4px;
+    vertical-align: middle;
+    font-family: "Gotham-Bold";
+}
+
+.side-navbar .navbar-links .navbar-link-item:hover {
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.side-navbar .navbar-links .navbar-link-item:nth-child(1) {
+    background-color: #282828;
+    color: #fff;
+}
+
+.navbar-links .navbar-link-item svg {
+    margin-left: 16px;
+    margin-right: 15px;
+
+}
+
+.navbar-playlists .playlists-title {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #aaaaaa;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.navbar-playlists .playlist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.navbar-playlists .playlist-item:hover {
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.playlist-item .playlist-item-title {    
+    font-weight: bolder;
+}
+
+.navbar-playlists .playlist-icon-plus {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 32px;
+    height: 32px;
+    background-color: #aaaaaa;
+    margin-right: 15px;
+    
+}
+
+.navbar-playlists .playlist-icon-plus .icon-plus {
+    color: #040404;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.navbar-playlists .playlist-icon-heart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 32px;
+    height: 32px;    
+    background: linear-gradient(120deg, rgba(73, 17, 255, 0.753) 30%, rgb(209, 209, 209) 100%);
+    margin-right: 15px;
+    
+}
+
+.navbar-separator hr {
+    border-width: 0.3px;
+    border-color: #202020;
+}
+
+.navbar-playlists .playlist-icon-heart .icon-heart {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.album-list-scroll {
+    overflow: auto;
+    height: 600px;
+}
+
+.album-list .album-playlist-name {
+    font-size: 13px;
+    padding: 9px 0 10px 0;
+}
+
+.album-list .album-playlist-name:hover {
+    color: #fff;
+}
+
+.bottom-navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .container-block .music {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 0 16px;
+    font-family: "GothamBook";
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+.container-block .music .music-image {
+    width: 56px;
+    height: 56px;
+}
+
+.music .atual-music-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px 0 10px;
+}
+
+.music .atual-music-description .title {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+    
+}
+.music .atual-music-description .title:hover {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.music .atual-music-description .artist:hover {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.music .icon-heart-empty {
+    margin-right: 8px;
+}
+
+.container-block i:hover {
+    color: #fff;
+}
+
+.container-block .music i {
+    font-size: 16px;
+}
+
+.container-block .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #aaaaaa;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.container-block:nth-child(2) {
+    margin-left: -50px;
+}
+
+.container-block .buttons i {
+    margin: 0 20px 0 20px;
+}
+
+.container-block .buttons .play-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    width: 32px;
+    height: 32px;
+}
+
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    font-family: "GothamBook";
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+.progress-bar-container .progress-bar {
+    width: 600px;
+    height: 4px;
+    background-color: #505050;
+    margin: 0 10px 0 10px;    
+}
+
+.container-block .volume-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #aaaaaa;
+    font-size: 16px;
+    margin: 20px 10px 0 0;
+}
+
+.container-block .volume-wrapper .demo-icon{
+    margin-left:15px;
+}
+
+.volume-wrapper .volume {
+    width: 90px;
+    height: 4px;
+    background-color: #aaaaaa;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}  
+   
+::-webkit-scrollbar-thumb {
+background: #505050; 
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
